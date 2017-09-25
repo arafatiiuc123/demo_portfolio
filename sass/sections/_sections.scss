@@ -1,0 +1,43 @@
+.section {
+	padding-top: 100px;
+	padding-bottom: 70px;
+// section typography
+	&_title {
+		font-size: 30px;
+		font-weight: bold;
+		color: $black;
+		margin-top: 0;
+	}
+
+	&_description {
+		font-size: 18px;
+  		line-height: 1.8;
+  		margin: 5px;
+	}// end section typography
+
+    &.section--gray-bg {
+        background-color: #f6f6f6;
+    }
+
+}
+
+.section_heading--centered {
+	.section_title {
+		text-align: center;
+	}
+
+	.section_description {
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.875;
+		width: 461px;
+		margin: 0 auto;
+		@media screen and (max-width: 468px) {
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	} // section_description
+
+
+}

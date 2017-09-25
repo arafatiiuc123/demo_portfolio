@@ -1,0 +1,7 @@
+$yellow: #ffce1d;
+$black: #303030;
+
+
+@mixin transition($property, $time) {
+	transition: $property $time ease-in-out;
+}

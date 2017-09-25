@@ -1,0 +1,77 @@
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 1200px) {
+    	padding-bottom: 70px;
+    }
+
+    &_title {
+    	font-weight: 800;
+    	font-size: 48px;
+    	color: white;
+    }
+    &_subtitle {
+    	font-weight: 400;
+    	font-size: 24px;
+    	color: $yellow;
+    }
+    &_description {
+    	font-size: 16px;
+    	color: white;
+    	font-style: italic;
+    }
+
+    &_cta {
+    	margin-top: 70px;
+    	
+    	@media screen and (max-width: 500px) {
+    		margin-top: 30px;
+    	}
+    	button {
+    		margin-right: 15px;
+    	}
+    }
+}
+
+// styles for the slider
+#hero_slider {
+	//padding-top: 100px;
+
+	.owl-dots {
+		position: absolute;
+		right: 25px;
+		bottom: 30px;
+
+		.owl-dot {
+			display: block;
+			position: relative;
+			margin-bottom: 15px;
+			span {
+				background-color: white;
+			}
+		}
+
+		.owl-dot.active {
+			display: block;
+
+			span {
+				border: 3px solid rgba(255,255,255,.5);
+				&:after {
+					content: "";
+					height: 18px;
+					width: 18px;
+					border-radius: 50%;
+					background-color: rgba(255,255,255,.5);
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+			}
+		} // owl dots active
+
+	} // owl dots
+} // hero slider

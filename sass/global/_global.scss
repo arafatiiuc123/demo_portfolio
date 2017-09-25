@@ -1,0 +1,22 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.heading_small {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+	.hero, #about, #skills, footer{
+		text-align: center;
+	}
+
+	#about, #skills {
+		& img {
+			margin: 0 auto;
+			margin-bottom: 35px;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+#skills {
+	.section_progress-bars {
+		margin-top: 50px;
+	}
+	.progress {
+		height: 10px;
+		border-radius: 15px;
+		box-shadow: none;
+		overflow: visible;
+	}
+
+	.progress-bar {
+		background-color: $yellow;
+		box-shadow: none;
+		position: relative;
+		border-radius: 15px;
+
+		.circle {
+			height: 16px;
+		    width: 16px;
+		    background: $yellow;
+		    position: absolute;
+		    right: 0;
+		    top: -2px;
+		    border-radius: 50%;
+		    z-index: 99;
+		    box-shadow: 0 0 0px 7px rgba($yellow,.37);
+		    border: 1px solid rgba(0,0,0,.03);
+		}
+	}
+
+}

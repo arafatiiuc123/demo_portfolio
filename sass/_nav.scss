@@ -1,0 +1,71 @@
+#navbar-custom {
+	padding: 10px 0;
+	// position: absolute;
+    width: 100%;
+    z-index: 999;
+
+	ul li a {
+		font-size: 16px;
+	}
+	// reseting default colors
+	.navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+		color: white;
+	}
+
+	.navbar-toggle {
+		cursor: pointer;
+	}
+
+	&.fixed  {
+		box-shadow: 0 0 10px 3px rgba(0,0,0,.1);
+		background-color: rgba(black, .95);
+		position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+
+        .navbar-toggle .icon-bar {
+        	background-color: $black;
+        }
+
+        .navbar-brand {
+        	color: $yellow;
+        	margin-top: -9px;
+        }
+
+        .navbar-nav>li>a {
+			color: white;
+			@include transition(all, .3s); 
+
+			&:hover {
+				color: #cda616;
+			}
+        }
+        .navbar-default .navbar-nav>li>a:focus {
+			color: $black;
+		}
+
+	}
+
+	.navbar-nav>li.active>a {
+		color: #cda616;
+    	// font-weight: bold;
+	}
+
+	@media screen and (max-width: 768px) {
+		position: fixed;
+		top: 0;
+		z-index: 99999999;
+		background: black;
+
+		.navbar-collapse {
+			border-top: 1px solid lighten(black, 90%)
+		}
+
+		.navbar-brand {
+			margin-top: -10px;
+		}
+	}
+	
+}

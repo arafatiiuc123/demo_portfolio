@@ -1,0 +1,28 @@
+#contact {
+	
+	.contact_form {
+		margin-top: 45px;
+
+		input,textarea {
+			width: 100%;
+			padding: 18px;
+			border: 1px solid rgba(0,0,0,.1);
+			border-radius: 2px;
+			margin-bottom: 25px;
+			resize: none;
+		}
+		input[name="message"] {
+ 			height: 142px;
+		}
+		input:focus,
+		textarea:focus {
+			outline: 1px solid $yellow;
+		}
+
+		.form_cta {
+			text-align: center;
+		}
+
+	} // contact form
+
+}

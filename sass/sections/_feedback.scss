@@ -1,0 +1,74 @@
+#feedback {
+
+	#feedback_slider {
+		margin-top: 35px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		padding-top: 45px;
+
+		.owl-stage-outer {
+			overflow: visible;
+		}
+	}
+
+	.feedback_item {
+		text-align: center;
+		background-color: #f6f6f6;
+		padding: 20px 30px;
+		padding-top: 50px;
+		margin-right: 20px;
+		i {
+			color: $yellow;
+		}
+	}
+
+	.feedback_client_image {
+        height: 91px;
+        width: 91px;
+		margin: 0 auto;
+		position: absolute;
+		top: -45px;
+		left: 50%;
+		transform: translateX(-60%);
+    }
+
+// feedback slider nav 
+.owl-nav {
+	@media screen and (max-width:800px) {
+		display: none;
+	}
+	.owl-prev, .owl-next {
+		&:hover {
+			cursor: pointer;
+		}
+		i { 
+			color: white;
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 18px;
+		}
+	}
+	.owl-prev{
+		position: absolute;
+    	top: 50%;
+    	left: -50px;
+		background-color: $yellow;
+		height: 30px;
+		width: 30px;
+		display: table;
+		text-align: center;
+		
+	}
+	.owl-next{
+		position: absolute;
+    	top: 50%;
+    	right: -30px;
+		background-color: $yellow;
+		height: 30px;
+		width: 30px;
+		display: table;
+		text-align: center;
+	}
+} // end slider nav
+
+}

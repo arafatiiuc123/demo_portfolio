@@ -1,0 +1,59 @@
+.btn {
+	outline: none;
+	border: none;
+	background-color: $yellow;
+	border: 2px solid $yellow;
+	width: 200px;
+  	height: 49px;
+  	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+	font-size: 20px;
+	line-height: 1.8;
+	color: black;
+	transition: all .3s ease-in-out; 
+
+	&:hover {
+		background-color: transparent;
+		color: white;
+	}
+
+	&_round {
+		border-radius: 24.5px;
+	}
+
+	&_large {
+		// padding: 10px 40px;
+		width: 300px;
+	}
+
+	&_transparent {
+		background-color: transparent;
+		border: 2px solid $yellow;
+		color: white;
+		transition: all .3s ease-in-out; 
+
+		&:hover {
+			background-color: $yellow;
+			color: black;
+		}
+
+	}
+
+	&_black {
+		color: black;
+	}
+
+	&_no-shadow {
+		box-shadow: none;
+	}
+
+	&_inverse {
+		&:hover {
+			color: black;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		margin-bottom: 15px;
+	}
+
+}
